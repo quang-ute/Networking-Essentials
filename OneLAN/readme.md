@@ -20,7 +20,7 @@ cd Nees\OneLAN <br>
 <img width="954" src="https://user-images.githubusercontent.com/57078914/159427263-dd8c11bb-22de-484e-9ba6-3eaba0baaf50.png">
 
 The STATUS column indicates the containers are working normally <br>
-. Attaching to the console of hosts
+5. Attaching to the console of hosts
 for host-172.16.10.5:<br>
 `docker exec -it host-172.16.10.5 sh -l`
 
@@ -32,6 +32,17 @@ for host-172.16.10.6:<br>
 <img width="954" src="https://user-images.githubusercontent.com/57078914/159433369-b2ba6d5a-d6eb-4327-859c-654819a3b5f9.png">
 
 The network is now ready for the labs <br>
+To check docker networks: <br>
+`docker network ls`
+
+<img width="981" src="https://user-images.githubusercontent.com/57078914/159483528-01ee4c15-7c6f-4401-82c5-b56a13b4de44.png">
+
+To list ip addresses of connected containers: <br>
+
+`docker network inspect b3c` <-- b3c is network id
+
+<img width="954" src="https://user-images.githubusercontent.com/57078914/159484719-6c40c76b-55a0-4e5e-94bb-6d9ed1faa69c.png">
+
 When finish doing the labs <br> 
 `docker-compose down`
 
