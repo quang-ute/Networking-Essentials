@@ -7,6 +7,7 @@ git clone https://github.com/quang-ute/Nees <br>
 cd Nees\OneLAN <br>
 2. Building and starting the containers <br>
 docker-compose up -d <br>
+<img width="954" src="https://user-images.githubusercontent.com/57078914/159435365-6dd4465d-82f1-4d32-a749-bf31202aed43.png">
 Check the containers with docker ps <br>
 docker ps <br>
 <img width="954" src="https://user-images.githubusercontent.com/57078914/159427263-dd8c11bb-22de-484e-9ba6-3eaba0baaf50.png">
