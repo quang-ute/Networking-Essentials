@@ -5,7 +5,3 @@ RUN apk --no-cache add \
     tcpdump && \ 
     rm -rf \
    /tmp/* 
-#    adduser -s /bin/sh nees 
-
-#RUN echo "root:nees" | chpasswd && \ 
-#    echo "nees:pees" | chpasswd
