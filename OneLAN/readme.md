@@ -10,4 +10,14 @@ docker-compose up -d <br>
 Check the containers with docker ps <br>
 docker ps <br>
 <img width="954" src="https://user-images.githubusercontent.com/57078914/159427263-dd8c11bb-22de-484e-9ba6-3eaba0baaf50.png">
-   
+The STATUS column indicates the containers are working normally<br>
+3. Attaching to the console of hosts<br>
+for host-172.16.10.5:<br>
+docker exec -it host-172.16.10.5 sh -l<br>
+<img width="954" src="https://user-images.githubusercontent.com/57078914/159432433-ad9ae47f-b84d-4d3e-9720-bdacffed6cc0.png">
+for host-172.16.10.6:<br>
+docker exec -it host-172.16.10.6 sh -l<br>
+<img width="954" src="https://user-images.githubusercontent.com/57078914/159433369-b2ba6d5a-d6eb-4327-859c-654819a3b5f9.png">
+When finish doing the labs <br>
+docker-compose down <br>
+<img width="954" src="https://user-images.githubusercontent.com/57078914/159434148-32874d50-9944-49bb-8102-3a2e1de97c16.png">
