@@ -6,8 +6,8 @@
 1. Install Docker Desktop on your computer
 2. Clone git to the local host, change working directory to OneLAN:
 ```
-git clone https://github.com/quang-ute/Nees
-cd Nees\OneLAN <br>
+git clone https://github.com/quang-ute/Networking-Essentials
+cd Networking-Essentials\OneLAN <br>
 ```
 3. Building and starting the containers <br>
 `docker-compose up -d`
