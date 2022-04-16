@@ -1,7 +1,10 @@
 # Simple network for inspecting network packets with wireshark or tcpdump
 This is a containerized network that comprises a simple httpd server, a client where wireshark packet analyzer is installed.
-One can sit at the client to access the web server or a ftp server which can be attached to the network latter.
+One can sit at the client to access the web server or a ftp server which can be attached to the network later.
 All the packet goes to and from this client can be captured and inspected in wireshark.
+
+<img width="274" src="https://user-images.githubusercontent.com/57078914/163670787-e809892f-ce96-472f-9046-115df43f2ab0.png">
+
 The network can be set up in windows terminal by:
 1. Cloning the repository to the local machine<br>
 `git clone https://github.com/quang-ute/Networking-Essentials.git`
@@ -14,7 +17,7 @@ To watch the network traffic in wireshark, you must initiate requests from this 
 
 `docker exec -it wireshark sh -l`
 
-## install curl package
+## install curl package (web client)
 Inside the container:<br>
 
 `apk update`
@@ -50,7 +53,7 @@ To get the ip address of the newly created ftp server, in windows terminal:
   
 <img width="823" src="https://user-images.githubusercontent.com/57078914/163669891-1b389ea0-ebd1-4d90-bf44-9b211a878472.png">
 
-## install lftp package
+## install lftp package (ftp client)
 Inside the wireshark container:
 
 `apk add lftp`
