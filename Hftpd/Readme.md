@@ -70,7 +70,7 @@ You are now in the ftp server
 
 <img width="1091" src="https://user-images.githubusercontent.com/57078914/163670304-7d1b9826-5d16-4f19-b6a6-a8f28c47e617.png">
 
-You can also simultaneously inspect tcp packets or tcp stream for this session.
+You can also simultaneously inspect tcp packets or tcp stream of this session.
 
 
 
