@@ -12,7 +12,9 @@ The network can be set up in windows terminal by:
 `cd Networking-Essentials\Hftpd`
 3. Setting it up by `docker-compose up -d`
 <img width="527" src="https://user-images.githubusercontent.com/57078914/163668481-ddf6f6a8-3de1-41ff-968a-1dacb802b887.png">
-Now you should be able to access the web server by visiting `http://localhost:5025` or `curl 172.16.10.100` within the client container <br>
+Now you should be able to access the web server by visiting 
+
+`http://localhost:5025` or `curl 172.16.10.100` within the client container <br>
 
 ## Attach a ftp server to the network
 In windows terminal<br>
