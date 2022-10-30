@@ -1,7 +1,5 @@
-# Simple network for inspecting network packets with wireshark or tcpdump
-This is a containerized network that comprises a simple httpd server, a client where wireshark packet analyzer is installed.
-One can sit at the client to access the web server or a ftp server which can be attached to the network later.
-All the packet goes to and from this client can be captured and inspected in wireshark.
+# Simple network setup for inspecting network packets with tcpdump or sniffing in scapy
+This is a containerized network that comprises a simple httpd server, a sniffer-host where one can sniff every network packet flowing on 172.16.10.0/24 docker network One can sit at the client-host to access the web server or an optional ftp server which can be attached to the network later.
 
 <img width="274" src="https://user-images.githubusercontent.com/57078914/163670787-e809892f-ce96-472f-9046-115df43f2ab0.png">
 
