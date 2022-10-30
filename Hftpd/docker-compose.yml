@@ -1,0 +1,47 @@
+---
+version: "3"
+services:
+  sniffer:
+    build: 
+      context: ./sniffer
+    image: aled-image   # Alpine edge image
+    container_name: sniffer-host
+    tty: true
+    cap_add:
+        - ALL
+    privileged: true
+    volumes:
+        - ./source:/mapdir
+    network_mode: host
+  http:
+    build:
+      context: ./nginx
+    image: nginx/alpine
+    container_name: web-server
+    volumes:
+      - ./nginx/iweb:/usr/share/nginx/html
+    tty: true
+    cap_add:
+        - ALL
+    networks:
+      net-172.16.10.0:
+          ipv4_address: 172.16.10.100
+    ports:
+      - 5025:80
+  client:
+    build: ./base-image
+    image: nees-base-image
+    container_name: client-172.16.10.10
+    tty: true
+    cap_add:
+         - ALL
+    networks:
+      net-172.16.10.0:
+          ipv4_address: 172.16.10.10
+
+networks:
+    net-172.16.10.0:
+        name: net-172.16.10.0
+        ipam:
+            config:
+                - subnet: 172.16.10.0/24
