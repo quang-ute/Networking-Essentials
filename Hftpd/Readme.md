@@ -1,7 +1,7 @@
 # Simple network setup for inspecting network packets with tcpdump or sniffing in scapy
 This is a containerized network that comprises a simple httpd server, a sniffer-host where one can sniff every network packet flowing on 172.16.10.0/24 docker network One can sit at the client-host to access the web server or an optional ftp server which can be attached to the network later.
 
-<img width="274" src="https://user-images.githubusercontent.com/57078914/163670787-e809892f-ce96-472f-9046-115df43f2ab0.png">
+![Capture](https://user-images.githubusercontent.com/57078914/198918685-16775255-67c4-4501-8bc6-b11b8506390b.PNG)
 
 The network can be set up in windows terminal by:
 1. Cloning the repository to the local machine<br>
