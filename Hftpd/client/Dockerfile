@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM alpine:3.12
 
 # init ash file (for non-login shells)
 ENV ENV '$HOME/.ashrc'
