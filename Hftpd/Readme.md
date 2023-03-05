@@ -27,7 +27,14 @@ After the first successful connection, there will be a thumbnail like in the abo
 ![image](https://user-images.githubusercontent.com/57078914/222958351-14fbb98e-db9e-466e-9e66-1f5296578d00.png)
 
 ## Starting wireshark in client host
+1. Open terminal window.
+2. Enter command `sudo wireshark` then input `alpine` for the password
 
+![image](https://user-images.githubusercontent.com/57078914/222965914-959dd46a-bac5-4289-9542-e90c86b62442.png)
+
+3. Double-click the operative NIC to start packet capture.
+
+![image](https://user-images.githubusercontent.com/57078914/222966069-1ac988b4-a403-4fa4-9212-b5b260e404ae.png)
 
 ## Attach a ftp server to the network
 In windows terminal<br>
