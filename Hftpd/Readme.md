@@ -24,6 +24,11 @@ which makes web access more comfortable.
 At first, you need to type localhost:5900 on search bar of VNC Viewer then enter to connect to the host.
 After the first successful connection, there will be a thumbnail like in the above image. You just double-click it for connection later on. 
 
+![image](https://user-images.githubusercontent.com/57078914/222958351-14fbb98e-db9e-466e-9e66-1f5296578d00.png)
+
+## Starting wireshark in client host
+
+
 ## Attach a ftp server to the network
 In windows terminal<br>
 
