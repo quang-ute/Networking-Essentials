@@ -7,14 +7,22 @@ The network can be set up in windows terminal by:
 1. Cloning the repository to the local machine<br>
 `git clone https://github.com/quang-ute/Networking-Essentials.git`
 2. Change to the Hftpd folder<br>
-`cd Networking-Essentials\Hftpd`
-(updated on 05/03/2023)
+`cd Networking-Essentials\Hftpd` <br>
+
+*(Updated on 05/03/2023)* <br>
+
 3. Build images by `docker-compose build`
 4. Start up the network by `docker-compose up -d`
 <img width="527" src="https://user-images.githubusercontent.com/57078914/163668481-ddf6f6a8-3de1-41ff-968a-1dacb802b887.png">
 Now you should be able to access the web server by visiting 
 
 `http://localhost:5025` or `curl 172.16.10.100` within the client container <br>
+Due to updates on 05/03/2023, the client host run VNC Server internally. You now can use the client host's GUI using VNC client
+which makes web access more comfortable.
+![image](https://user-images.githubusercontent.com/57078914/222957984-28a2d52d-f178-4f25-8c84-321f34f6c46e.png)
+
+At first, you need to type localhost:5900 on search bar of VNC Viewer then enter to connect to the host.
+After the first successful connection, there will be a thumbnail like in the above image. You just double-click it for connection later on. 
 
 ## Attach a ftp server to the network
 In windows terminal<br>
