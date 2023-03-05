@@ -29,12 +29,17 @@ services:
     ports:
       - 5025:80
   client:
-    build: ./base-image
-    image: nees-base-image
-    container_name: client-172.16.10.10
+    build: 
+      context: ./client
+    image: alpine-vnc-wireshark
+    container_name: wireshark
     tty: true
     cap_add:
-         - ALL
+      - NET_ADMIN
+    privileged: true
+    ports:
+      - 5900:5900
+      - 2222:22
     networks:
       net-172.16.10.0:
           ipv4_address: 172.16.10.10
