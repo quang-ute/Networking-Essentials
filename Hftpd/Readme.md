@@ -8,7 +8,9 @@ The network can be set up in windows terminal by:
 `git clone https://github.com/quang-ute/Networking-Essentials.git`
 2. Change to the Hftpd folder<br>
 `cd Networking-Essentials\Hftpd`
-3. Setting it up by `docker-compose up -d`
+(updated on 05/03/2023)
+3. Build images by `docker-compose build`
+4. Start up the network by `docker-compose up -d`
 <img width="527" src="https://user-images.githubusercontent.com/57078914/163668481-ddf6f6a8-3de1-41ff-968a-1dacb802b887.png">
 Now you should be able to access the web server by visiting 
 
