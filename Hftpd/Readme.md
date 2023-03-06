@@ -19,6 +19,7 @@ Now you should be able to access the web server by visiting
 `http://localhost:5025` or `curl 172.16.10.100` within the client container <br>
 Due to updates on 05/03/2023, the client host run VNC Server internally. You now can use the client host's GUI using VNC client
 which makes web access more comfortable.
+
 ![image](https://user-images.githubusercontent.com/57078914/222957984-28a2d52d-f178-4f25-8c84-321f34f6c46e.png)
 
 At first, you need to type localhost:5900 on search bar of VNC Viewer then enter to connect to the host.
