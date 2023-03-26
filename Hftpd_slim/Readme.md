@@ -1,18 +1,21 @@
 # Simple network setup for inspecting network packets with tcpdump or sniffing in scapy
-This is a containerized network that comprises a simple httpd server, a sniffer-host where one can sniff every network packet flowing on 172.16.10.0/24 docker network One can sit at the client-host to access the web server or an optional ftp server which can be attached to the network later.
+This docker container set is bit different from the Hftpd set:
+1. The client-host is a slimmer version of that in Hftpd: There is no wireshark, no ssh, no vnc server which make build process much faster; the images size is also more tiny. You can only work in command-line interface for this host. 
+2. The web server now run with APACHE and PHP to clearly demonstrate various aspect of http protocol. 
+3. The Python script in sniffer-host can help you to capture ip packets and display them in a human readable way. It's much cleaner than capturing packets in wireshark. 
 
 ![Capture](https://user-images.githubusercontent.com/57078914/198918685-16775255-67c4-4501-8bc6-b11b8506390b.PNG)
 
 The network can be set up in windows terminal by:
 1. Cloning the repository to the local machine<br>
 `git clone https://github.com/quang-ute/Networking-Essentials.git`
-2. Change to the Hftpd folder<br>
-`cd Networking-Essentials\Hftpd`
+2. Change to the Hftpd-slim folder<br>
+`cd Networking-Essentials\Hftpd-slim`
 3. Setting it up by `docker-compose up -d`
 <img width="527" src="https://user-images.githubusercontent.com/57078914/163668481-ddf6f6a8-3de1-41ff-968a-1dacb802b887.png">
 Now you should be able to access the web server by visiting 
 
-`http://localhost:5025` or `curl 172.16.10.100` within the client container <br>
+`http://localhost:5050` from the host machine or `curl 172.16.10.100` within the client-host container <br>
 
 ## Attach a ftp server to the network
 In windows terminal<br>
