@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="my-form" action="/submit" method="post">
+      <input type="text" name="name" placeholder="Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="tel" name="phone" placeholder="Phone">
+      <button type="submit">Submit</button>
+    </form>
+  
+    <script>
+      const form = document.getElementById('my-form');
+  
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+  
+        const formData = new FormData(form);
+  
+        for (const [name, value] of formData.entries()) {
+          document.write(`${name}: ${value}<br>`);
+        }
+      });
+    </script>
+  </body>
+</html>

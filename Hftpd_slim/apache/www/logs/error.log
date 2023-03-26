@@ -1,0 +1,11 @@
+[Fri Mar 24 14:45:07.972701 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.55 (Unix) PHP/7.4.33 OpenSSL/1.1.1s configured -- resuming normal operations
+[Fri Mar 24 14:45:07.973267 2023] [core:notice] [pid 1] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Mar 24 16:26:40.357861 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.55 (Unix) PHP/7.4.33 OpenSSL/1.1.1s configured -- resuming normal operations
+[Fri Mar 24 16:26:40.358399 2023] [core:notice] [pid 1] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Mar 25 15:21:16.467317 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.55 (Unix) PHP/7.4.33 OpenSSL/1.1.1s configured -- resuming normal operations
+[Sat Mar 25 15:21:16.468648 2023] [core:notice] [pid 1] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sun Mar 26 10:15:58.912204 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.55 (Unix) PHP/7.4.33 OpenSSL/1.1.1s configured -- resuming normal operations
+[Sun Mar 26 10:15:58.913161 2023] [core:notice] [pid 1] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sun Mar 26 11:32:05.123499 2023] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+[Sun Mar 26 11:39:01.264026 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.55 (Unix) PHP/7.4.33 OpenSSL/1.1.1s configured -- resuming normal operations
+[Sun Mar 26 11:39:01.265074 2023] [core:notice] [pid 1] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
