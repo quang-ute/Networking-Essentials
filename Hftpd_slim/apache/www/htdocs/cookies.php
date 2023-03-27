@@ -12,7 +12,7 @@ if(!isset($_COOKIE[$cookie_name])) {
 } else {
   echo "Cookie '" . $cookie_name . "' is set!<br>";
   echo "Value is: " . $_COOKIE[$cookie_name]."<br><br>";
-  
+  echo "<a href='del_cookie.php'" . "> Delete cookie </a>" ;
 }
 ?>
 
