@@ -20,9 +20,7 @@ Now you should be able to access the web server by visiting
 ## Attach a ftp server to the network
 In windows terminal<br>
 
-`docker run -p 21:21 -p 21000-21010:21000-21010 \`<br>
-            `-v C:\Users\quang\ftp\:/ftp/student \`<br>
-            `--network net-172.16.10.0 delfer/alpine-ftp-server`
+`docker run -d --name ftp-server -p 21:21 -p 21000-21010:21000-21010 -v C:\Users\quang\ftp\:/ftp/student --network net-172.16.10.0 delfer/alpine-ftp-server`
             
 Replace `C:\Users\quang\ftp\` with the folder that map to the home folder of the ftp server.
 
