@@ -21,10 +21,10 @@ Now you should be able to access the web server by visiting
 In windows terminal<br>
 
 `docker run -p 21:21 -p 21000-21010:21000-21010 \`<br>
-            `-e USERS="student|12345" \`<br>
+            `-v C:\Users\quang\ftp\:/ftp/student \`<br>
             `--network net-172.16.10.0 delfer/alpine-ftp-server`
             
-Replace `C:\Users\quang\Downloads\` with the folder that map to the home folder of the ftp server.
+Replace `C:\Users\quang\ftp\` with the folder that map to the home folder of the ftp server.
 
 To get the ip address of the newly created ftp server, in windows terminal:
 
