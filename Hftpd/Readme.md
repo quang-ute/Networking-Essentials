@@ -41,7 +41,6 @@ After the first successful connection, there will be a thumbnail like in the abo
 In windows terminal<br>
 
 `docker run -p 21:21 -p 21000-21010:21000-21010 \`<br>
-            `-e USERS="student|12345" \`<br>
             `-v C:\Users\quang\Downloads\:/ftp/student \` <br>
             `--network net-172.16.10.0 delfer/alpine-ftp-server`
             
@@ -57,9 +56,9 @@ To get the ip address of the newly created ftp server, in windows terminal:
 
 `lftp 172.16.10.2` (prompt changed)
 
-`user student`
+`user alpineftp`
 
-then input password 12345
+then input password alpineftp
 
 You are now in the ftp server
 
