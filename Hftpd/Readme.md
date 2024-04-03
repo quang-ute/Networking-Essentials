@@ -16,7 +16,7 @@ The network can be set up in windows terminal by:
 <img width="527" src="https://user-images.githubusercontent.com/57078914/163668481-ddf6f6a8-3de1-41ff-968a-1dacb802b887.png">
 Now you should be able to access the web server by visiting 
 
-`http://localhost:5025` or `curl 172.16.10.100` within the client container <br>
+`http://localhost:5025` on host computer or `curl 172.16.10.100` within the client container <br>
 Due to updates on 05/03/2023, the client host run VNC Server internally. You now can use the client host's GUI using VNC client
 which makes web access more comfortable.
 
