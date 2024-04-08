@@ -1,18 +1,6 @@
 ---
 version: "3"
 services:
-  sniffer:
-    build: 
-      context: ./sniffer
-    image: aled-image   # Alpine edge image
-    container_name: sniffer-host
-    tty: true
-    cap_add:
-        - ALL
-    privileged: true
-    volumes:
-        - ./source:/mapdir
-    network_mode: host
   http:
     build:
       context: ./nginx
