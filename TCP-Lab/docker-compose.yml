@@ -1,0 +1,27 @@
+
+services:
+  http_server:
+    build: ./http_server
+    container_name: http_server
+    networks:
+      tcp_lab_network:
+        ipv4_address: 172.16.10.100
+    volumes:
+      - ./files:/var/web
+  client:
+    build: ./client
+    container_name: client
+    networks:
+      tcp_lab_network:
+        ipv4_address: 172.16.10.10
+    tty: true
+    cap_add:
+        - ALL
+    privileged: true
+
+networks:
+  tcp_lab_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.10.0/24
