@@ -9,6 +9,7 @@ services:
       - NET_ADMIN  # Required for packet sniffing
       - NET_RAW
     privileged: true
+    command: bash -c "service apache2 start && /bin/sh"
     ports:
       - "5050:5050"  # Map container port 5050 to host port 5050
     networks:
