@@ -30,4 +30,4 @@ EXPOSE 5050
 WORKDIR /app
 
 # Use entrypoint script to start services
-CMD ["/app/entrypoint.sh"]
+CMD ["/bin/sh"]
