@@ -19,7 +19,8 @@ services:
     build: ./client
     container_name: cli-client
     tty: true  # Keep the container running with an interactive shell
-
+    volumes:
+      - ./client:/app
     networks:
       - lab-network
 
