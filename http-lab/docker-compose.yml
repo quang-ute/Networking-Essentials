@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  apache:
+    build: ./apache
+    container_name: web-server
+    tty: true
+    cap_add:
+      - NET_ADMIN  # Required for packet sniffing
+      - NET_RAW
+    privileged: true
+    command: bash -c "service apache2 start && tail -f /var/log/apache2/access.log"
+    ports:
+      - "5050:5050"  # Map container port 5050 to host port 5050
+    networks:
+      - lab-network
+
+  client:
+    build: ./client
+    container_name: cli-client
+    tty: true  # Keep the container running with an interactive shell
+    volumes:
+      - ./client:/app
+    networks:
+      - lab-network
+
+
+networks:
+  lab-network:
+    driver: bridge
